@@ -1,4 +1,4 @@
-# wl-clipboard-rs
+# anchor-wl-clipboard
 
 Wayland clipboard access for Anchor. It watches and writes clipboard data using
 Wayland data-control protocols, with an X11/XWayland fallback when Wayland
@@ -15,7 +15,7 @@ cargo check
 ## Use
 
 ```rust
-use wl_clipboard_rs::{ClipboardEvent, ClipboardWatcherBuilder, ClipboardWriter};
+use anchor_wl_clipboard::{ClipboardEvent, ClipboardWatcherBuilder, ClipboardWriter};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let writer = ClipboardWriter::new()?;
@@ -31,8 +31,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 }
 ```
 
-This crate is not published on crates.io. Its package name overlaps the
-upstream `wl-clipboard-rs` dependency used internally for fallback support.
+The package name is distinct from the upstream `wl-clipboard-rs` dependency
+used internally for fallback support.
 
 ## License
 
