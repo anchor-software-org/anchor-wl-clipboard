@@ -1,0 +1,5 @@
+use_small_heuristics = "Max"
+reorder_imports = true
+newline_style = "Unix"
+tab_spaces = 4
+edition = "2024"

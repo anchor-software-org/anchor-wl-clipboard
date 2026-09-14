@@ -1,0 +1,12 @@
+[package]
+name = "wl-clipboard-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wayland-client = "0.31"
+wayland-protocols-wlr = { version = "0.3", features = ["client"] }
+os_pipe = "1"
+log = "0.4"
+x11-clipboard = "0.9.3"
+wayland-clipboard-backend = { package = "wl-clipboard-rs", version = "0.9.3" }
