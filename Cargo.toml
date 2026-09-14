@@ -2,6 +2,10 @@
 name = "wl-clipboard-rs"
 version = "0.1.0"
 edition = "2024"
+description = "Wayland clipboard access with X11/XWayland fallback"
+license = "MIT"
+repository = "https://github.com/anchor-software-org/wl-clipboard-rs"
+readme = "README.md"
 
 [dependencies]
 wayland-client = "0.31"
